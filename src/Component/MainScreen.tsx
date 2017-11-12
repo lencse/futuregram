@@ -12,8 +12,7 @@ export default class MainScreen extends React.Component<MainScreenProps, {}> {
 
     public render() {
         return (
-            <div>
-                <p>@{ this.props.username }</p>
+            <div id='mainscreen'>
                 { this.list() }
             </div>
         )
@@ -21,16 +20,16 @@ export default class MainScreen extends React.Component<MainScreenProps, {}> {
 
     private list(): JSX.Element {
         const elements = this.props.data.map((item, idx) => (
-            <div key={ idx }>
-                <p>{ item.hashtag }</p>
-                <p>{ item.description }</p>
+            <div className='post' key={ idx }>
+                <p>@{ this.props.username }_64</p>
                 <p>
                     <img src={item.img} alt='' />
                 </p>
+                <p>{ item.hashtag }</p>
                 <p>
+                    { item.description } &nbsp;
                     <a href={ item.url }>{ item.url }</a>
                 </p>
-                <hr />
             </div>
         ))
         return (

@@ -17,6 +17,15 @@ export default class Main extends React.Component<{}, State> implements Subscrib
     }
 
     public render() {
+        return (
+            <div id='container'>
+                <img src='img/futureme_003.png' id='logo' />
+                { this.content() }
+            </div>
+        )
+    }
+
+    private content(): JSX.Element {
         return this.state.futurized
             ? <MainScreen username={ this.state.username } data={ this.state.data } />
             : <InputScreen username={ this.state.username } />

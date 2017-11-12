@@ -11,14 +11,17 @@ export default class InputScreen extends React.Component<InputScreenProps, {}> {
 
     public render() {
         return (
-            <div>
-                <input
-                    type="text"
-                    name="username"
-                    id="username-input"
-                    value={ this.props.username }
-                    onChange={ this.changeUsername.bind(this) }
-                />
+            <div id='inputscreen'>
+                <p id='input-container'>
+                    @
+                    <input
+                        type="text"
+                        name="username"
+                        id="username-input"
+                        value={ this.props.username }
+                        onChange={ this.changeUsername.bind(this) }
+                    />
+                </p>
                 <button onClick={ this.futurize.bind(this) }>Futurize me!</button>
             </div>
         )
