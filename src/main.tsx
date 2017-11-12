@@ -4,8 +4,7 @@ import Main from './Component/Main'
 import Instagram from './Loader/Instagram'
 
 const ig = new Instagram()
-const hashtags = ig.getHashtags('lilla_racz')
-console.log(hashtags)
+// ig.getHashtags('lilla_racz').then(hashtags => { console.log(hashtags) })
 
 ReactDom.render(
     <Main />,
