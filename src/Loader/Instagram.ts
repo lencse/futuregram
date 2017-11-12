@@ -15,7 +15,14 @@ export default class Instagram {
         //     }).then(data => {
         //         console.log(data)
         //     })
-        return ['food', 'tattoo', 'dummy']
+        return [
+            'food',
+            'whisky',
+            'tattoo',
+            'iceland',
+            'coffee',
+            'hackastory'
+        ]
     }
 
 }
