@@ -27,7 +27,7 @@ export default class Main extends React.Component<{}, State> implements Subscrib
 
     private content(): JSX.Element {
         return this.state.futurized
-            ? <MainScreen username={ this.state.username } data={ this.state.data } />
+            ? <MainScreen username={ this.state.username } data={ this.state.data } showNewPost={ this.state.showNewPost } />
             : <InputScreen username={ this.state.username } />
     }
 

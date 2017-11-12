@@ -12,5 +12,6 @@ export class State {
     public username: string = ''
     public data: Post[] = []
     public futurized: boolean = false
+    public showNewPost: boolean = false
 
 }

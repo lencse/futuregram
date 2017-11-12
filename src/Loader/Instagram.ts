@@ -16,12 +16,12 @@ export default class Instagram {
         //         console.log(data)
         //     })
         return [
+            'hackastory',
             'food',
             'whisky',
             'tattoo',
             'iceland',
-            'coffee',
-            'hackastory'
+            'coffee'
         ]
     }
 
