@@ -9,7 +9,7 @@ export class Post {
 
 export class State {
 
-    public username: string = ''
+    public username: string = 'hannah_hackastory'
     public data: Post[] = []
     public futurized: boolean = false
     public showNewPost: boolean = false
